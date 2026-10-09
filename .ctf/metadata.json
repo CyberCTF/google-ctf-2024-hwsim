@@ -3,6 +3,6 @@
   "description": "A hardware design tool that asks for a full adder built from NAND gates for a new CPU, then sends the circuit to the factory for testing. As the hardware supplier, sneak a backdoor past that verification.",
   "question": "Retrieve the flag from the challenge service.",
   "category": "MISC",
-  "difficulty": 4,
+  "difficulty": 3,
   "evidence_kind": "SECRET"
 }
