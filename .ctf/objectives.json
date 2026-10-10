@@ -1,0 +1,72 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Get the flag",
+      "prompt": "Build a circuit that passes the factory tests but later makes the machine print its secret key.",
+      "check": {
+        "evidence": "SECRET",
+        "format": "CTF{%s}"
+      },
+      "dev": "CTF{dev-google-ctf-2024-hwsim}",
+      "hints": [
+        "The verification only tests what it simulates.",
+        "Gates with memory can behave differently after a certain sequence of inputs."
+      ],
+      "steps": [
+        {
+          "key": "gate",
+          "title": "Identify the gate",
+          "prompt": "Which universal gate do you build everything from?",
+          "check": {
+            "answer": [
+              "nand",
+              "nand gate"
+            ]
+          }
+        },
+        {
+          "key": "circuit",
+          "title": "Know the circuit",
+          "prompt": "Which arithmetic circuit must pass the factory's tests?",
+          "check": {
+            "answer": [
+              "full adder",
+              "adder",
+              "8-bit adder",
+              "full-adder"
+            ]
+          }
+        },
+        {
+          "key": "memory",
+          "title": "Name the building block",
+          "prompt": "Which circuit element stores a bit and lets behaviour depend on history?",
+          "check": {
+            "answer": [
+              "flip-flop",
+              "flip flop",
+              "latch",
+              "d flip-flop",
+              "register",
+              "shift register"
+            ]
+          }
+        },
+        {
+          "key": "class",
+          "title": "Name the attack class",
+          "prompt": "What do you call hidden malicious logic in a chip?",
+          "check": {
+            "answer": [
+              "hardware trojan",
+              "backdoor",
+              "hardware backdoor",
+              "trojan"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
