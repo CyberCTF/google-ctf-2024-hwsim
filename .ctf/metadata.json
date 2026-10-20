@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-google-ctf-2024-hwsim",
+  "slug": "google-ctf-2024-hwsim",
   "title": "Google CTF 2024: hwsim",
   "description": "A hardware design tool that asks for a full adder built from NAND gates for a new CPU, then sends the circuit to the factory for testing. As the hardware supplier, sneak a backdoor past that verification.",
-  "question": "Build a circuit that passes the factory tests but later leaks the secret, and read the flag.",
-  "category": "MISC",
+  "category": "misc",
   "difficulty": 3,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Build a circuit that passes the factory tests but later leaks the secret, and read the flag."
 }
